@@ -6,16 +6,17 @@ export const FeaturesCardsSections = () => {
           Discover the future of blockchain with BlockForge.
         </h2>
         <div className="mt-36">
-          <div className="relative z-0 p-8">
-            <div className=" absolute size-16 rounded-xl bg-fuchsia-500 top-1.5 right-1.5 -z-10"></div>
+          <div className="relative z-0 p-8 max-w-xs group">
+            <div className=" absolute size-16 rounded-xl bg-fuchsia-500 top-1.5 right-1.5 -z-10 blur-lg opacity-0 group-hover:opacity-100 "></div>
+            <div className=" absolute size-16 rounded-xl bg-fuchsia-500 top-1.5 right-1.5 -z-10 group-hover:bg-fuchsia-400 transition-duration-300"></div>
             <div className=" absolute inset-0 bg-zinc-800 -z-10 rounded-2xl [mask-image:linear-gradient(225deg,transparent,transparent_40px,black_40px)]  "></div>
             <div className=" flex justify-center -mt-28">
               <div className="inline-flex relative">
-                <div className=" absolute h-4 w-full top-[calc(100%+16px)] bg-zinc-950/70 rounded-[100%] [mask-image:radial-gradient(closest-side,black,transparent)]"></div>
+                <div className=" absolute h-4 w-full top-[calc(100%+16px)] bg-zinc-950/70 group-hover:bg-zinc-950/30 transition-duration-300 rounded-[100%] [mask-image:radial-gradient(closest-side,black,transparent)]"></div>
                 <img
                   src="/assets/images/pill.png"
                   alt="Pill"
-                  className=" size-40 "
+                  className=" size-40 group-hover:-translate-y-6 transition-duration-300"
                 />
               </div>
             </div>
