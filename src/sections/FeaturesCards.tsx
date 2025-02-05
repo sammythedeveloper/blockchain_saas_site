@@ -1,10 +1,14 @@
 export const FeaturesCardsSections = () => {
   return (
-    <section>
+    <section className=" py-24 ">
       <div className=" container ">
-        <h2>Discover the future of blockchain with BlockForge.</h2>
+        <h2 className=" font-heading font-black text-4xl">
+          Discover the future of blockchain with BlockForge.
+        </h2>
         <div>
-          <div>
+          <div className="relative z-0 ">
+            <div className=" absolute size-16 rounded-xl bg-fuchsia-500 top-1.5 right-1.5 -z-10"></div>
+            <div className=" absolute inset-0 bg-zinc-800 -z-10 rounded-2xl [mask-image:linear-gradient(225deg,transparent,transparent_40px,black_40px)]  "></div>
             <img src="/assets/images/pill.png" alt="Pill" />
             <h3>Revolutionary Blockchain API</h3>
             <p>
@@ -29,14 +33,17 @@ export const FeaturesCardsSections = () => {
               </svg>
             </div>
           </div>
-              </div>
-              <div className=" bg-zinc-950 inline-flex gap-4 p-2.5 rounded-full  " >
-                  <div>
-                      {[...new Array(4)].fill(0).map((_, i) => (
-                          <div key={i} className=" size-2.5 bg-zinc-500 rounded-full cursor-pointer"></div>
-                      ))}
-                  </div>
-              </div>
+        </div>
+        <div className=" flex justify-center ">
+          <div className="bg-zinc-950 inline-flex gap-4 p-2.5 rounded-full">
+            {[...new Array(4)].fill(0).map((_, i) => (
+              <div
+                key={i}
+                className=" size-2.5 bg-zinc-500 rounded-full cursor-pointer"
+              ></div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
