@@ -65,6 +65,14 @@ export const Herosection = () => {
             />
           </div>
         </div>
+        <div className=" flex justify-center flex-col items-center mt-40 md:mt-80 gap-4 ">
+          <div className=" h-10 w-5 outline outline-[6px] outline-fuchsia-500/10 inline-flex justify-center pt-2 rounded-full">
+          <div className=" justify-center pt-2 rounded-full " ></div>
+          </div>
+          <p className="uppercase text-zinc-500 font-extrabold tracking-wider">
+            Scroll to learn more
+          </p>
+        </div>
       </div>
     </section>
   );
