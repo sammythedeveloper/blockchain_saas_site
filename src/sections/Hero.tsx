@@ -1,3 +1,4 @@
+import { Circle } from "../components/Circle";
 import { CutCornerButton } from "../components/CutCornerButton";
 import { Hexagon } from "../components/Hexagon";
 export const Herosection = () => {
@@ -26,10 +27,31 @@ export const Herosection = () => {
               <Hexagon className="size-[1100px]" />
             </div>
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <div className=" bg-zinc-900 size-[240px] inline-flex items-center justify-center rounded-full outline outline-[6px] -outline-offset-[6px] outline-fuchsia-500/10 absolute left-[200px] -top-[900px]">
-                <img src="/assets/images/cube.png" alt="Cube"
-                className="size-[140px]"/>
-              </div>
+              <Circle className=" absolute left-[200px] -top-[900px] ">
+                <img
+                  src="/assets/images/cube.png"
+                  alt="Cube"
+                  className="size-[140px]"
+                />
+              </Circle>
+            </div>
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Circle className=" absolute left-[200px] top-[270px] ">
+                <img
+                  src="/assets/images/cuboid.png"
+                  alt="Cuboid 3D image"
+                  className="size-[140px]"
+                />
+              </Circle>
+            </div>
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Circle className=" absolute -left-[600px] -top-[80px] ">
+                <img
+                  src="/assets/images/torus.png"
+                  alt="Torus 3D image"
+                  className="size-[140px]"
+                />
+              </Circle>
             </div>
             <img
               src="/assets/images/icosahedron.png"
