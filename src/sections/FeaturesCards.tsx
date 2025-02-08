@@ -47,14 +47,15 @@ export const FeaturesCardsSections = () => {
               >
                 <div
                   className={twMerge(
-                    " absolute size-16 rounded-xl bg-fuchsia-500 top-1.5 right-1.5 -z-10 blur-lg opacity-0 group-hover:opacity-100 ",
+                    " absolute size-16 rounded-xl bg-fuchsia-500 top-1.5 right-1.5 -z-10 blur-lg opacity-0 group-hover:opacity-100 transition-duration-300 ",
                     color === "lime" && "bg-lime-500",
-                    color === "cyne" && "bg-cyan-500"
+                    color === "cyne" && "bg-cyan-500",
+                    color === "violet" && "bg-violet-500"
                   )}
                 ></div>
                 <div
                   className={twMerge(
-                    " absolute size-16 rounded-xl bg-fuchsia-500 group-hover:bg-fuchsia-400 transition-duration-300 top-1.5 right-1.5 -z-10 ",
+                    "absolute size-16 rounded-xl bg-fuchsia-500 group-hover:bg-fuchsia-400 transition-duration-300 top-1.5 right-1.5 -z-10 ",
                     color === "lime" && "bg-lime-500 group-hover:bg-lime-400,",
                     color === "cyan" && "bg-cyan-500 group-hover:bg-cyne-400,",
                     color === "violet" &&
