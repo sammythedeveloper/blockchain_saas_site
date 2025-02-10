@@ -17,7 +17,7 @@ export const FeaturesGrid = () => {
           Blockforge provides robust and infrastructure to support the next
           generation of decentralized applications.
         </p>
-      </div>
+    
       <ul className=" flex flex-col gap-8 mt-12  ">
         {listItems.map((item) => (
           <li key={item} className=" flex items-center gap-3 ">
@@ -27,11 +27,20 @@ export const FeaturesGrid = () => {
             <span className="text-xl font-bold   ">{item}</span>
           </li>
         ))}
-        
       </ul>
       <div className=" flex gap-8 mt-12  ">
         <CutCornerButton>Get Started</CutCornerButton>
         <TextButton>Learn More</TextButton>
+        </div>
+      </div>
+      <div>
+        <h2 >Blockforge leads the way.</h2>
+        <p>Blockforge is dedicated to supporting the evolution of the web3 applications by delivering the necessary infrastructre and security for web3.</p>
+        <p>Blockforge champions web3 for everyone. As a decentralized blockchain scaling platform, Blockforge enables developers to create scalable ,user-friendly apps with low transaction costs, all wjile ensuring robust security.</p>
+        <div>
+          <CutCornerButton>Get Started</CutCornerButton>
+          <TextButton>Learn More</TextButton>
+        </div>
       </div>
     </section>
   );
