@@ -10,10 +10,10 @@ export const FeaturesGrid = () => {
   return (
     <section className=" py-24 overflow-clip ">
       <div className="container">
-        <div className=" flex flex-col gap-56 md:gap-48 ">
-          <div className=" grid grid-cols-3 gap-8">
+        <div className=" flex flex-col gap-56 md:gap-48 lg:gap-80 ">
+          <div className=" grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className=" col-span-2">
-              <h2 className=" font-heading font-black text-4xl md:text-5xl">
+              <h2 className=" font-heading font-black text-4xl md:text-5xl lg:text-6xl ">
                 Empowering the future of blockchain.
               </h2>
               <p className=" text-xl text-zinc-400 mt-8">
@@ -35,7 +35,7 @@ export const FeaturesGrid = () => {
                 <TextButton>Learn More</TextButton>
               </div>
             </div>
-            <div>
+            <div className=" hidden md:block" >
               <div className=" relative inline-flex z-0 ">
                 <img
                   src="/assets/images/torus-knot.png"
@@ -50,8 +50,8 @@ export const FeaturesGrid = () => {
               </div>
             </div>
           </div>
-          <div className=" grid grid-cols-3 gap-8 ">
-            <div className=" relative ">
+          <div className=" grid grid-cols-1 md:grid-cols-3 gap-8 ">
+            <div className=" hidden md:block relative ">
               <div className="absolute right-0  ">
                 <img
                   src="/assets/images/cone.png"
@@ -69,7 +69,7 @@ export const FeaturesGrid = () => {
               <h2 className="font-heading font-black text-4xl md:text-5xl ">
                 Blockforge leads the way.
               </h2>
-              <div className=" flex flex-col text-xl text-zinc-400 mt-6 gap-6">
+              <div className=" flex flex-col text-xl lg:text-2xl text-zinc-400 mt-6 gap-6">
                 <p>
                   Blockforge is dedicated to supporting the evolution of the
                   web3 applications by delivering the necessary infrastructre
