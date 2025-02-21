@@ -10,7 +10,7 @@ export const FeaturesGrid = () => {
   return (
     <section className=" py-24 overflow-clip ">
       <div className="container">
-        <div className=" flex flex-col gap-56">
+        <div className=" flex flex-col gap-56 md:gap-48 ">
           <div className=" grid grid-cols-3 gap-8">
             <div className=" col-span-2">
               <h2 className=" font-heading font-black text-4xl md:text-5xl">
@@ -35,17 +35,38 @@ export const FeaturesGrid = () => {
                 <TextButton>Learn More</TextButton>
               </div>
             </div>
-            <div></div>
+            <div>
+              <div className=" relative inline-flex z-0 ">
+                <img
+                  src="/assets/images/torus-knot.png"
+                  alt="Torus Knot 3D image"
+                  className=" size-96 max-w-none"
+                />
+                <img
+                  src="/assets/images/hemisphere.png"
+                  alt="Hemisphere 3d shape"
+                  className=" absolute size-96 top-3/4 -z-10 scale-x-[-1]"
+                />
+              </div>
+            </div>
           </div>
           <div className=" grid grid-cols-3 gap-8 ">
-            <div className=" relative " >
+            <div className=" relative ">
               <div className="absolute right-0  ">
-                <img src="/assets/images/cone.png" alt="Cone 3D" className=" size-96 max-w-none" />
-                <img src="/assets/images/hemisphere.png" alt="Cone 3D" />
+                <img
+                  src="/assets/images/cone.png"
+                  alt="Cone 3D"
+                  className=" size-96 max-w-none z-0 rotate-12  "
+                />
+                <img
+                  src="/assets/images/hemisphere.png"
+                  alt="Hemisphere 3D"
+                  className=" absolute top-3/4 -z-10 left-0 "
+                />
               </div>
             </div>
             <div className=" col-span-2 ">
-              <h2 className="font-heading font-black text-4xl">
+              <h2 className="font-heading font-black text-4xl md:text-5xl ">
                 Blockforge leads the way.
               </h2>
               <div className=" flex flex-col text-xl text-zinc-400 mt-6 gap-6">
