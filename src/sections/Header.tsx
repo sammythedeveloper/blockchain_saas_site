@@ -12,6 +12,7 @@ export const HeaderSection = () => {
               {" "}
               Sign Up
             </CutCornerButton>
+
             <CutCornerButton className=" hidden md:inline-flex  ">
               {" "}
               Sign in
